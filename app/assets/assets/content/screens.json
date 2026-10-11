@@ -1,0 +1,1261 @@
+{
+ "U001": {
+  "title": "Treasure Hunt",
+  "hindi": "",
+  "purpose": "Brand/loading; minimum version check.",
+  "states": [
+   "Offline",
+   "update",
+   "maintenance"
+  ]
+ },
+ "U002": {
+  "title": "Your Next Adventure Awaits",
+  "hindi": "Explore. Solve. Discover. Repeat.",
+  "purpose": "Explain local treasure, 10 clues, and rewards.",
+  "states": [
+   "Skip",
+   "revisit"
+  ],
+  "primary": "Get Started",
+  "primary_to": "U003"
+ },
+ "U003": {
+  "title": "Welcome Back!",
+  "hindi": "The next clue is always closer than you think.",
+  "purpose": "Login with approved identifier and password/method.",
+  "states": [
+   "Invalid",
+   "locked",
+   "reset"
+  ],
+  "primary": "Sign In",
+  "primary_to": "U011"
+ },
+ "U004": {
+  "title": "Create Your Account",
+  "hindi": "Join the Treasure Hunt Adventure and start exploring!",
+  "purpose": "Create new account; accept terms and privacy.",
+  "states": [
+   "Duplicate",
+   "weak credentials"
+  ],
+  "primary": "Create Account",
+  "primary_to": "U005"
+ },
+ "U005": {
+  "title": "Verify Your Email",
+  "hindi": "ईमेल सत्यापित करें",
+  "purpose": "Email/phone verification as selected.",
+  "states": [
+   "Expired code",
+   "resend limit"
+  ],
+  "primary": "Verify",
+  "primary_to": "U007",
+  "secondary": "Resend code",
+  "secondary_to": "U005"
+ },
+ "U006": {
+  "title": "Forgot Password",
+  "hindi": "पासवर्ड भूल गए",
+  "purpose": "Recovery token and secure password reset.",
+  "states": [
+   "Throttled",
+   "completed"
+  ],
+  "primary": "Send Reset Link",
+  "primary_to": "U003",
+  "secondary": "Back to Sign In",
+  "secondary_to": "U003"
+ },
+ "U007": {
+  "title": "Set Up Your Explorer",
+  "hindi": "Choose your look and tell us who’s exploring.",
+  "purpose": "Name/nickname, required profile fields and region.",
+  "states": [
+   "Draft",
+   "validation"
+  ],
+  "primary": "Save & Continue",
+  "primary_to": "U008"
+ },
+ "U008": {
+  "title": "Account Safety",
+  "hindi": "खाते की सुरक्षा",
+  "purpose": "Session overview and suspicious login alert.",
+  "states": [
+   "Revoke session"
+  ],
+  "primary": "Secure My Account",
+  "primary_to": "U009",
+  "secondary": "Sign out all other devices",
+  "secondary_to": "U008"
+ },
+ "U009": {
+  "title": "Consent Center",
+  "hindi": "सहमति केंद्र",
+  "purpose": "Privacy/terms versions and location permissions.",
+  "states": [
+   "Granted",
+   "withdrawn"
+  ],
+  "primary": "Save Preferences",
+  "primary_to": "U011",
+  "secondary": "View consent log",
+  "secondary_to": "U107"
+ },
+ "U010": {
+  "title": "Update Required",
+  "hindi": "अपडेट ज़रूरी है",
+  "purpose": "Unsupported version, blocked feature, safe update.",
+  "states": [
+   "Retry",
+   "update"
+  ],
+  "primary": "Update Now",
+  "primary_to": "U001",
+  "secondary": "Retry",
+  "secondary_to": "U001"
+ },
+ "U011": {
+  "title": "Real-World Adventures Need Your Location",
+  "hindi": "Treasure Hunt uses your location to create exciting, real-world adventures around you.",
+  "purpose": "Explain why foreground location is needed.",
+  "states": [
+   "Proceed",
+   "later"
+  ],
+  "primary": "Enable Location",
+  "primary_to": "U012"
+ },
+ "U012": {
+  "title": "Allow Location Access",
+  "hindi": "स्थान की अनुमति दें",
+  "purpose": "Trigger OS foreground location permission.",
+  "states": [
+   "Precise",
+   "approximate",
+   "denied"
+  ],
+  "primary": "While using the app",
+  "primary_to": "U013",
+  "secondary": "Only this time",
+  "secondary_to": "U013"
+ },
+ "U013": {
+  "title": "Finding Your Location",
+  "hindi": "Let’s make sure we can find you accurately for the best experience.",
+  "purpose": "Accuracy, integrity, live check and status.",
+  "states": [
+   "Searching",
+   "success",
+   "failure"
+  ],
+  "secondary": "Try Again",
+  "secondary_to": "U015"
+ },
+ "U014": {
+  "title": "Location Unavailable",
+  "hindi": "स्थान उपलब्ध नहीं",
+  "purpose": "Permission/device/accuracy reason and remedy.",
+  "states": [
+   "Settings",
+   "retry"
+  ],
+  "primary": "Open Settings",
+  "primary_to": "U012",
+  "secondary": "Retry",
+  "secondary_to": "U013"
+ },
+ "U015": {
+  "title": "Is This Your Area?",
+  "hindi": "We found you at the following location. Let’s make sure this looks right before you start your adventure!",
+  "purpose": "Show generalized locality, do not publish exact home.",
+  "states": [
+   "Confirm",
+   "choose valid retry"
+  ],
+  "primary": "Yes, This Is My Area",
+  "primary_to": "U016",
+  "secondary": "Use a Different Location",
+  "secondary_to": "U013"
+ },
+ "U016": {
+  "title": "Your Next Adventure Is Ready!",
+  "hindi": "A real-world treasure hunt is waiting in your area. Here’s a preview:",
+  "purpose": "Start location-based path under eligible tier.",
+  "states": [
+   "Preview",
+   "start"
+  ],
+  "primary": "Start Adventure",
+  "primary_to": "U017"
+ },
+ "U017": {
+  "title": "Generating Treasure…",
+  "hindi": "खज़ाना तैयार हो रहा है",
+  "purpose": "Load POIs, safety and unique place filters.",
+  "states": [
+   "Loading",
+   "shortage",
+   "error"
+  ],
+  "primary": "View My Map",
+  "primary_to": "U023",
+  "secondary": "Shortage example",
+  "secondary_to": "U018"
+ },
+ "U018": {
+  "title": "Not Enough Places",
+  "hindi": "पर्याप्त स्थान नहीं",
+  "purpose": "Explain insufficient approved nearby nodes.",
+  "states": [
+   "Admin-curated alternative",
+   "retry"
+  ],
+  "primary": "Use Curated Route",
+  "primary_to": "U023",
+  "secondary": "Retry",
+  "secondary_to": "U017"
+ },
+ "U019": {
+  "title": "New Location Detected",
+  "hindi": "नया स्थान मिला",
+  "purpose": "Choose current or new regional Adventure.",
+  "states": [
+   "Keep",
+   "pause",
+   "start"
+  ],
+  "primary": "Start Patna Adventure",
+  "primary_to": "U016",
+  "secondary": "Keep current",
+  "secondary_to": "U021"
+ },
+ "U020": {
+  "title": "Adventure Switcher",
+  "hindi": "रोमांच बदलें",
+  "purpose": "Switch active/paused/completed regional journeys.",
+  "states": [
+   "Resume",
+   "archive allowed"
+  ],
+  "primary": "Resume Mohali",
+  "primary_to": "U021",
+  "secondary": "New Adventure",
+  "secondary_to": "U016"
+ },
+ "U021": {
+  "title": "Hi, Explorer!",
+  "hindi": "New places. Brighter you.",
+  "purpose": "Current Adventure, next step, map summary, wallets.",
+  "states": [
+   "New",
+   "returning",
+   "empty"
+  ]
+ },
+ "U022": {
+  "title": "Master Treasure Roadmap",
+  "hindi": "Five treasures. Bigger every time.",
+  "purpose": "Treasure 1..N nodes, unlocks, tier progress.",
+  "states": [
+   "Locked",
+   "active",
+   "finished"
+  ],
+  "primary": "Open Treasure 1 Map",
+  "primary_to": "U023"
+ },
+ "U023": {
+  "title": "Treasure 1: Phase 7 Trail",
+  "hindi": "Follow the path. Solve the clues. Reach the treasure!",
+  "purpose": "10+ level nodes and treasure end point.",
+  "states": [
+   "Unvisited",
+   "verified",
+   "complete"
+  ],
+  "primary": "Level 8 Preview",
+  "primary_to": "U031"
+ },
+ "U024": {
+  "title": "Treasure 1 Overview",
+  "hindi": "Coastal Discovery · Sukhna Lake",
+  "purpose": "Tier radius, level count, progress and objectives.",
+  "states": [
+   "In progress",
+   "completed"
+  ],
+  "primary": "Continue Adventure",
+  "primary_to": "U023"
+ },
+ "U025": {
+  "title": "Treasure Rewards Preview",
+  "hindi": "Here’s what you could earn from this treasure. Keep exploring to unlock it!",
+  "purpose": "Admin-loaded options and claim rules.",
+  "states": [
+   "Stock",
+   "eligibility",
+   "paused"
+  ],
+  "primary": "Keep Exploring",
+  "primary_to": "U024"
+ },
+ "U026": {
+  "title": "Adventure Library",
+  "hindi": "Explore new regions, revisit past journeys, and find your next adventure!",
+  "purpose": "Cards by region, date and state.",
+  "states": [
+   "Active",
+   "paused",
+   "archived"
+  ]
+ },
+ "U027": {
+  "title": "Rose Garden Trail",
+  "hindi": "Explore blooming paths, hidden fountains and ancient secrets in the heart of the tricity.",
+  "purpose": "Area, tier, node and clue progress.",
+  "states": [
+   "Resume",
+   "see history"
+  ],
+  "primary": "Resume Adventure",
+  "primary_to": "U021",
+  "secondary": "View History",
+  "secondary_to": "U028"
+ },
+ "U028": {
+  "title": "Progress Timeline",
+  "hindi": "Your adventure, step by step. Relive your journey and see what’s next!",
+  "purpose": "Milestones, location and game completion history.",
+  "states": [
+   "Filters",
+   "empty"
+  ],
+  "primary": "Back to Adventure",
+  "primary_to": "U021"
+ },
+ "U029": {
+  "title": "Next Treasure Tier Unlocked!",
+  "hindi": "Amazing! You’ve completed enough adventures to unlock a new tier with a bigger search area.",
+  "purpose": "Celebratory tier and radius expansion.",
+  "states": [
+   "View tier",
+   "postpone"
+  ],
+  "primary": "View Tier Details",
+  "primary_to": "U022",
+  "secondary": "Maybe Later",
+  "secondary_to": "U021"
+ },
+ "U030": {
+  "title": "Next Tier Locked",
+  "hindi": "Complete a few more adventures to unlock the next treasure tier and expand your search area!",
+  "purpose": "Describe prerequisites and reward availability.",
+  "states": [
+   "Rule version",
+   "unavailable"
+  ]
+ },
+ "U031": {
+  "title": "Location Preview",
+  "hindi": "Here’s a quick look at this adventure before you head out. Each location has unique clues and surprises!",
+  "purpose": "Name, approximate distance, category and status.",
+  "states": [
+   "Locked",
+   "available"
+  ],
+  "primary": "Start This Adventure",
+  "primary_to": "U036",
+  "secondary": "View on Map",
+  "secondary_to": "U023"
+ },
+ "U032": {
+  "title": "Place Details",
+  "hindi": "Everything you need to know before you visit this location. We show real-world context to help you have a safe and enjoyable adventure.",
+  "purpose": "Safe public context, approach instructions and hours note.",
+  "states": [
+   "Closed",
+   "changed",
+   "delisted"
+  ],
+  "primary": "View Nearby Adventures",
+  "primary_to": "U023",
+  "secondary": "Get Directions",
+  "secondary_to": "U033"
+ },
+ "U033": {
+  "title": "Get Directions",
+  "hindi": "Open your preferred map app to navigate to Rose Garden Pavilion.",
+  "purpose": "Open selected installed maps service.",
+  "states": [
+   "No map app",
+   "share intent"
+  ],
+  "primary": "Open in Maps",
+  "primary_to": "U034",
+  "secondary": "View on Map",
+  "secondary_to": "U023"
+ },
+ "U034": {
+  "title": "Arrival Check-In",
+  "hindi": "You’re almost there! When you’re at Rose Garden Pavilion, confirm your location to unlock the clue.",
+  "purpose": "Explicit foreground Verify My Location action.",
+  "states": [
+   "Pass",
+   "outside geofence"
+  ]
+ },
+ "U035": {
+  "title": "Having Trouble with Location?",
+  "hindi": "Follow these tips to improve location accuracy and get back to your adventure.",
+  "purpose": "Fix GPS error, allow precise permission as needed.",
+  "states": [
+   "Retry",
+   "support"
+  ],
+  "primary": "Retry Location Check",
+  "primary_to": "U034",
+  "secondary": "Open Location Settings",
+  "secondary_to": "U012"
+ },
+ "U036": {
+  "title": "Level 1: The Old Banyan",
+  "hindi": "Look closer. Nature has a story to tell.",
+  "purpose": "Puzzle controls, objective and attempt terms.",
+  "states": [
+   "First",
+   "repeat"
+  ],
+  "primary": "Start Level",
+  "primary_to": "U037"
+ },
+ "U037": {
+  "title": "Start Game?",
+  "hindi": "खेल शुरू करें?",
+  "purpose": "Show attempt, Normal Lifeline condition on replay.",
+  "states": [
+   "Start",
+   "cancel"
+  ],
+  "primary": "Start",
+  "primary_to": "U046",
+  "secondary": "Cancel",
+  "secondary_to": "U031"
+ },
+ "U038": {
+  "title": "Resume Level?",
+  "hindi": "स्तर फिर से शुरू करें?",
+  "purpose": "Resume where safe after interrupted attempt.",
+  "states": [
+   "Expired",
+   "recover",
+   "new"
+  ],
+  "primary": "Resume",
+  "primary_to": "U046",
+  "secondary": "New attempt",
+  "secondary_to": "U037"
+ },
+ "U039": {
+  "title": "Place Changed",
+  "hindi": "स्थान बदल गया",
+  "purpose": "Venue removed/unsafe; new verified assignment flow.",
+  "states": [
+   "Pause",
+   "replacement"
+  ],
+  "primary": "Accept Replacement",
+  "primary_to": "U031",
+  "secondary": "Pause",
+  "secondary_to": "U021"
+ },
+ "U040": {
+  "title": "Stay Safe Out There",
+  "hindi": "सुरक्षित रहें",
+  "purpose": "Public-observation rule and safe travel reminder.",
+  "states": [
+   "Acknowledge"
+  ],
+  "primary": "I Understand",
+  "primary_to": "U034"
+ },
+ "U041": {
+  "title": "Pattern Rotation",
+  "hindi": "",
+  "purpose": "Rotate/match procedural pattern under rule.",
+  "states": [
+   "Pass",
+   "invalid",
+   "timer"
+  ]
+ },
+ "U042": {
+  "title": "Spatial Ordering",
+  "hindi": "",
+  "purpose": "Drag/reorder elements under constraints.",
+  "states": [
+   "Seeded variant",
+   "pass"
+  ]
+ },
+ "U043": {
+  "title": "Hidden Object Logic",
+  "hindi": "",
+  "purpose": "Tap only qualifying objects in dynamic scene.",
+  "states": [
+   "Penalty",
+   "reset"
+  ]
+ },
+ "U044": {
+  "title": "Memory Trail",
+  "hindi": "",
+  "purpose": "Observe and replay an event sequence.",
+  "states": [
+   "Reveal",
+   "input",
+   "check"
+  ]
+ },
+ "U045": {
+  "title": "Light & Shadow",
+  "hindi": "",
+  "purpose": "Move objects to align light paths.",
+  "states": [
+   "Manipulate",
+   "validate"
+  ]
+ },
+ "U046": {
+  "title": "Mirror Reflection",
+  "hindi": "",
+  "purpose": "Rotate mirrors / reflectors to reach a goal.",
+  "states": [
+   "State sync",
+   "finish"
+  ]
+ },
+ "U047": {
+  "title": "Balance Scale",
+  "hindi": "",
+  "purpose": "Place weights to satisfy hidden relation.",
+  "states": [
+   "Try",
+   "verify",
+   "retry"
+  ]
+ },
+ "U048": {
+  "title": "Deduction Grid",
+  "hindi": "",
+  "purpose": "Fill constraint logic grid from hints.",
+  "states": [
+   "Check",
+   "clear"
+  ]
+ },
+ "U049": {
+  "title": "Moving Maze",
+  "hindi": "",
+  "purpose": "Navigate changing pathways based on rules.",
+  "states": [
+   "Timeout",
+   "solved"
+  ]
+ },
+ "U050": {
+  "title": "Rule Switch",
+  "hindi": "",
+  "purpose": "Detect and adapt to changing logic.",
+  "states": [
+   "Next state",
+   "complete"
+  ]
+ },
+ "U051": {
+  "title": "Audio Rhythm",
+  "hindi": "",
+  "purpose": "Recreate auditory pattern; accessible alternative.",
+  "states": [
+   "Replay",
+   "alternate"
+  ]
+ },
+ "U052": {
+  "title": "Shape Logic",
+  "hindi": "",
+  "purpose": "Classify objects by abstract criteria.",
+  "states": [
+   "Color-safe",
+   "finish"
+  ]
+ },
+ "U053": {
+  "title": "Perspective Puzzle",
+  "hindi": "",
+  "purpose": "Rotate object or arrangement to match rule.",
+  "states": [
+   "Motion-safe",
+   "validate"
+  ]
+ },
+ "U054": {
+  "title": "Constraint Crossing",
+  "hindi": "",
+  "purpose": "Transport pieces with fixed constraints.",
+  "states": [
+   "Illegal move",
+   "win"
+  ]
+ },
+ "U055": {
+  "title": "Symbol Cipher",
+  "hindi": "",
+  "purpose": "Decode per-attempt symbols or movement cipher.",
+  "states": [
+   "Submit",
+   "invalid"
+  ]
+ },
+ "U056": {
+  "title": "Animation Observation",
+  "hindi": "",
+  "purpose": "Observe a temporal event and respond.",
+  "states": [
+   "Replay policy",
+   "score"
+  ]
+ },
+ "U057": {
+  "title": "Game Paused",
+  "hindi": "खेल रुका",
+  "purpose": "Preserve allowed state or end attempt per policy.",
+  "states": [
+   "Pause",
+   "quit"
+  ],
+  "primary": "Resume",
+  "primary_to": "U046",
+  "secondary": "Quit Attempt",
+  "secondary_to": "U031"
+ },
+ "U058": {
+  "title": "Level Complete!",
+  "hindi": "स्तर पूरा!",
+  "purpose": "Result, time, attempts, clue grant animation.",
+  "states": [
+   "Continue",
+   "notebook"
+  ],
+  "primary": "Reveal Clue 8",
+  "primary_to": "U061",
+  "secondary": "Notebook",
+  "secondary_to": "U062"
+ },
+ "U059": {
+  "title": "Puzzle Failed",
+  "hindi": "पहेली असफल",
+  "purpose": "Transparent failure reason and retry choice.",
+  "states": [
+   "Retry",
+   "exit"
+  ],
+  "primary": "Retry",
+  "primary_to": "U060",
+  "secondary": "Exit to map",
+  "secondary_to": "U023"
+ },
+ "U060": {
+  "title": "Use a Normal Lifeline?",
+  "hindi": "सामान्य लाइफलाइन?",
+  "purpose": "Show balance and cost of starting one retry.",
+  "states": [
+   "Buy",
+   "consume",
+   "dismiss"
+  ],
+  "primary": "Use 1 & Retry",
+  "primary_to": "U046",
+  "secondary": "Not now",
+  "secondary_to": "U023"
+ },
+ "U061": {
+  "title": "New Clue Found!",
+  "hindi": "",
+  "purpose": "Display earned clue only after server-confirmed pass.",
+  "states": [
+   "Earned",
+   "already owned"
+  ],
+  "primary": "Add to Notebook",
+  "primary_to": "U062"
+ },
+ "U062": {
+  "title": "Clue Notebook",
+  "hindi": "10 clues. One amazing treasure. Explore locations, solve puzzles and collect all the clues!",
+  "purpose": "Collected clues 1..N, origin and ordering.",
+  "states": [
+   "Incomplete",
+   "complete"
+  ],
+  "primary": "Synthesis Workspace",
+  "primary_to": "U064"
+ },
+ "U063": {
+  "title": "Clue 3 · Rose Garden",
+  "hindi": "सुराग 3 विवरण",
+  "purpose": "View image/symbol/text/audio with zoom accessibility.",
+  "states": [
+   "Accessible alternative"
+  ],
+  "primary": "Back to Notebook",
+  "primary_to": "U062"
+ },
+ "U064": {
+  "title": "Clue Synthesis Workspace",
+  "hindi": "Combine your clues, find the connections, and solve the final answer!",
+  "purpose": "Arrange/annotate clues to derive secret answer.",
+  "states": [
+   "Draft",
+   "reset"
+  ],
+  "primary": "Check Answer",
+  "primary_to": "U065"
+ },
+ "U065": {
+  "title": "The Treasure Lock",
+  "hindi": "You’ve collected the clues. Now unlock the final treasure!",
+  "purpose": "Input secret code/phrase/sequence or board state.",
+  "states": [
+   "Rate limited",
+   "verified"
+  ],
+  "primary": "Unlock Treasure",
+  "primary_to": "U067"
+ },
+ "U066": {
+  "title": "Not Quite!",
+  "hindi": "सही नहीं!",
+  "purpose": "Safe validation feedback without exposing solution.",
+  "states": [
+   "Try again",
+   "notebook"
+  ],
+  "primary": "Try Again",
+  "primary_to": "U065",
+  "secondary": "Open Notebook",
+  "secondary_to": "U062"
+ },
+ "U067": {
+  "title": "Treasure Unlocked!",
+  "hindi": "खज़ाना खुल गया!",
+  "purpose": "Only after accepted composite solution.",
+  "states": [
+   "Skip animation",
+   "resume"
+  ],
+  "primary": "Final Challenge",
+  "primary_to": "U068",
+  "secondary": "Skip animation",
+  "secondary_to": "U068"
+ },
+ "U068": {
+  "title": "The Final Challenge",
+  "hindi": "",
+  "purpose": "Explain 3-5 stages, attempt rules and outcomes.",
+  "states": [
+   "Start",
+   "later"
+  ],
+  "primary": "Start Now",
+  "primary_to": "U069",
+  "secondary": "Start Later",
+  "secondary_to": "U021"
+ },
+ "U069": {
+  "title": "Final Stage 1",
+  "hindi": "चरण 1 · खोज",
+  "purpose": "Interactive discovery-based logic challenge.",
+  "states": [
+   "Dynamic instance"
+  ],
+  "primary": "Submit Stage 1",
+  "primary_to": "U074",
+  "secondary": "Fail example",
+  "secondary_to": "U075"
+ },
+ "U070": {
+  "title": "Final Stage 2",
+  "hindi": "चरण 2 · क्रम",
+  "purpose": "Observation and sequence challenge.",
+  "states": [
+   "Dynamic instance"
+  ],
+  "primary": "Submit Stage 2",
+  "primary_to": "U071",
+  "secondary": "Fail example",
+  "secondary_to": "U075"
+ },
+ "U071": {
+  "title": "Final Stage 3",
+  "hindi": "चरण 3 · योजना",
+  "purpose": "Constraint planning challenge.",
+  "states": [
+   "Dynamic instance"
+  ],
+  "primary": "Submit Stage 3",
+  "primary_to": "U072",
+  "secondary": "Fail example",
+  "secondary_to": "U075"
+ },
+ "U072": {
+  "title": "Final Stage 4 (Optional)",
+  "hindi": "चरण 4 · नियम",
+  "purpose": "Rule adaptation challenge.",
+  "states": [
+   "Enabled per template"
+  ],
+  "primary": "Submit Stage 4",
+  "primary_to": "U073",
+  "secondary": "Skip optional",
+  "secondary_to": "U077"
+ },
+ "U073": {
+  "title": "Final Stage 5 (Optional)",
+  "hindi": "चरण 5 · संश्लेषण",
+  "purpose": "Cross-stage synthesis board.",
+  "states": [
+   "Enabled per template"
+  ],
+  "primary": "Finish Challenge",
+  "primary_to": "U077",
+  "secondary": "Fail example",
+  "secondary_to": "U075"
+ },
+ "U074": {
+  "title": "Checkpoint Saved",
+  "hindi": "चेकपॉइंट सहेजा",
+  "purpose": "Progress and next-stage transition.",
+  "states": [
+   "Saved",
+   "expired"
+  ],
+  "primary": "Next Stage",
+  "primary_to": "U070"
+ },
+ "U075": {
+  "title": "Challenge Failed",
+  "hindi": "Not this time, explorer. But every great explorer faces setbacks. Learn, try again, and the treasure is still within reach!",
+  "purpose": "Show result and Treasure Lifeline option.",
+  "states": [
+   "No balance",
+   "retry"
+  ],
+  "secondary": "Back to Map",
+  "secondary_to": "U023"
+ },
+ "U076": {
+  "title": "Confirm Treasure Retry",
+  "hindi": "पुनः प्रयास पुष्टि",
+  "purpose": "Debit only on authorized actual retry start.",
+  "states": [
+   "Confirm",
+   "Store"
+  ],
+  "primary": "Confirm Retry",
+  "primary_to": "U071",
+  "secondary": "Go to Store",
+  "secondary_to": "U081"
+ },
+ "U077": {
+  "title": "Congratulations!",
+  "hindi": "",
+  "purpose": "Server-confirmed completion and reward eligibility.",
+  "states": [
+   "Rewards",
+   "history"
+  ],
+  "primary": "Claim Your Rewards",
+  "primary_to": "U086"
+ },
+ "U078": {
+  "title": "Your Lifelines",
+  "hindi": "Two ways to keep exploring! Use lifelines to get hints, reveal clues around trickier puzzles, and never miss an adventure.",
+  "purpose": "Normal and Treasure balances side by side.",
+  "states": [
+   "Available",
+   "empty"
+  ]
+ },
+ "U079": {
+  "title": "Normal Lifeline Ledger",
+  "hindi": "सामान्य लाइफलाइन खाता",
+  "purpose": "Monthly grants, use and purchases in ledger.",
+  "states": [
+   "Filters",
+   "expiry if any"
+  ],
+  "primary": "Buy Normal Lifelines",
+  "primary_to": "U081"
+ },
+ "U080": {
+  "title": "Treasure Lifeline Ledger",
+  "hindi": "ख़ज़ाना लाइफलाइन खाता",
+  "purpose": "Special retry use, pricing and ledger.",
+  "states": [
+   "Filters",
+   "expiry if any"
+  ],
+  "primary": "Buy Treasure Lifelines",
+  "primary_to": "U081"
+ },
+ "U081": {
+  "title": "Adventure Store",
+  "hindi": "Get lifelines, gear up, and unlock more ways to explore!",
+  "purpose": "Two categories plus promotions and terms.",
+  "states": [
+   "Available",
+   "sold out"
+  ]
+ },
+ "U082": {
+  "title": "12 Normal Lifelines",
+  "hindi": "पैक विवरण",
+  "purpose": "Quantity, tax/price, limits, applicable policy.",
+  "states": [
+   "Confirm",
+   "unavailable"
+  ],
+  "primary": "Buy for ₹99",
+  "primary_to": "U083",
+  "secondary": "Back",
+  "secondary_to": "U081"
+ },
+ "U083": {
+  "title": "Secure Checkout",
+  "hindi": "सुरक्षित भुगतान",
+  "purpose": "Secure platform/PG purchase flow.",
+  "states": [
+   "Pending",
+   "decline",
+   "cancel"
+  ],
+  "primary": "Pay ₹99",
+  "primary_to": "U084",
+  "secondary": "Cancel",
+  "secondary_to": "U081"
+ },
+ "U084": {
+  "title": "Payment Successful",
+  "hindi": "भुगतान सफल",
+  "purpose": "Verified server credit and receipt.",
+  "states": [
+   "Success",
+   "pending",
+   "dispute"
+  ],
+  "primary": "Done",
+  "primary_to": "U078",
+  "secondary": "History",
+  "secondary_to": "U085"
+ },
+ "U085": {
+  "title": "Purchase History",
+  "hindi": "खरीद इतिहास",
+  "purpose": "Item, amount, order IDs, status and receipt.",
+  "states": [
+   "Refund",
+   "support"
+  ],
+  "primary": "Need help?",
+  "primary_to": "U105"
+ },
+ "U086": {
+  "title": "Treasure Prize Gallery",
+  "hindi": "Choose from amazing rewards to celebrate your adventure!",
+  "purpose": "All valid category offers under current Treasure.",
+  "states": [
+   "Eligible",
+   "out of stock"
+  ],
+  "primary": "Review Selection",
+  "primary_to": "U088"
+ },
+ "U087": {
+  "title": "boAt Airdopes 141",
+  "hindi": "इनाम जानकारी",
+  "purpose": "Description, fulfillment type, terms and validity.",
+  "states": [
+   "Choose",
+   "restricted"
+  ],
+  "primary": "Choose This",
+  "primary_to": "U088",
+  "secondary": "Back",
+  "secondary_to": "U086"
+ },
+ "U088": {
+  "title": "Your Selection",
+  "hindi": "आपका चयन",
+  "purpose": "One/two selection slots per Treasure admin policy.",
+  "states": [
+   "Limit",
+   "dedupe",
+   "stock"
+  ],
+  "primary": "Check Eligibility",
+  "primary_to": "U089"
+ },
+ "U089": {
+  "title": "Checking Eligibility",
+  "hindi": "पात्रता जाँच",
+  "purpose": "Final win, stock and anti-fraud server check.",
+  "states": [
+   "Clear",
+   "review"
+  ],
+  "primary": "Continue to Claim",
+  "primary_to": "U090"
+ },
+ "U090": {
+  "title": "Claim Your Reward",
+  "hindi": "You’ve earned it! Tell us where to send your prize and we’ll take care of the rest.",
+  "purpose": "Contact; delivery address only for physical gifts.",
+  "states": [
+   "Field validation"
+  ],
+  "primary": "Submit Claim",
+  "primary_to": "U091"
+ },
+ "U091": {
+  "title": "Review & Submit",
+  "hindi": "जाँचें और भेजें",
+  "purpose": "Display exact selected gifts and contact fields.",
+  "states": [
+   "Edit",
+   "confirm"
+  ],
+  "primary": "Submit Claim",
+  "primary_to": "U092",
+  "secondary": "Edit",
+  "secondary_to": "U090"
+ },
+ "U092": {
+  "title": "Claim Submitted",
+  "hindi": "दावा जमा",
+  "purpose": "Unique claim ID and next steps.",
+  "states": [
+   "Save",
+   "track"
+  ],
+  "primary": "Continue",
+  "primary_to": "U029",
+  "secondary": "Track shipment",
+  "secondary_to": "U095"
+ },
+ "U093": {
+  "title": "Your Voucher",
+  "hindi": "आपका वाउचर",
+  "purpose": "Reveal code / voucher safely after allocation.",
+  "states": [
+   "Copy",
+   "redeemed"
+  ],
+  "primary": "Mark as Redeemed",
+  "primary_to": "U096"
+ },
+ "U094": {
+  "title": "Lifelines Credited",
+  "hindi": "लाइफलाइन जोड़ी गई",
+  "purpose": "Wallet added with transaction reference.",
+  "states": [
+   "View wallet"
+  ],
+  "primary": "View Wallet",
+  "primary_to": "U078"
+ },
+ "U095": {
+  "title": "Shipping Status",
+  "hindi": "शिपिंग स्थिति",
+  "purpose": "Dispatch, tracking, delivery and operator notes.",
+  "states": [
+   "Delayed",
+   "delivered"
+  ],
+  "primary": "Claim details",
+  "primary_to": "U097",
+  "secondary": "My Rewards",
+  "secondary_to": "U096"
+ },
+ "U096": {
+  "title": "My Rewards",
+  "hindi": "मेरे पुरस्कार",
+  "purpose": "All claimed/unclaimed eligible rewards by Treasure.",
+  "states": [
+   "Filters",
+   "empty"
+  ]
+ },
+ "U097": {
+  "title": "Claim Details",
+  "hindi": "दावा विवरण",
+  "purpose": "SKU, selected amount, status and support route.",
+  "states": [
+   "Review",
+   "appeal"
+  ],
+  "primary": "Get Help",
+  "primary_to": "U105",
+  "secondary": "Appeal",
+  "secondary_to": "U105"
+ },
+ "U098": {
+  "title": "My Profile",
+  "hindi": "Explorer. Solver. Treasure Hunter.",
+  "purpose": "Avatar, account details, privacy defaults.",
+  "states": [
+   "View",
+   "edit"
+  ],
+  "secondary": "Sign Out",
+  "secondary_to": "U003"
+ },
+ "U099": {
+  "title": "Edit Profile",
+  "hindi": "Update your explorer details.",
+  "purpose": "Allowed field edits with verification rules.",
+  "states": [
+   "Save",
+   "reject"
+  ],
+  "primary": "Save",
+  "primary_to": "U098"
+ },
+ "U100": {
+  "title": "Gameplay History",
+  "hindi": "खेल इतिहास",
+  "purpose": "Attempts, level outcomes, timestamps and Treasures.",
+  "states": [
+   "Filter",
+   "paginate"
+  ],
+  "primary": "Treasure history",
+  "primary_to": "U101"
+ },
+ "U101": {
+  "title": "Treasure History",
+  "hindi": "ख़ज़ाना इतिहास",
+  "purpose": "Locks solved, final challenges and claimed gifts.",
+  "states": [
+   "Details",
+   "resume"
+  ],
+  "primary": "Back to Profile",
+  "primary_to": "U098"
+ },
+ "U102": {
+  "title": "Notifications",
+  "hindi": "सूचनाएँ",
+  "purpose": "System and fulfillment messages.",
+  "states": [
+   "Read",
+   "unread"
+  ],
+  "primary": "Notification settings",
+  "primary_to": "U103"
+ },
+ "U103": {
+  "title": "Notification Preferences",
+  "hindi": "सूचना प्राथमिकताएँ",
+  "purpose": "Opt-in controls and system channel settings.",
+  "states": [
+   "Save",
+   "revoke"
+  ],
+  "primary": "Save",
+  "primary_to": "U098"
+ },
+ "U104": {
+  "title": "Help Center",
+  "hindi": "सहायता केंद्र",
+  "purpose": "FAQ for places, clues, rewards and lifelines.",
+  "states": [
+   "Search",
+   "contact"
+  ],
+  "primary": "Contact Support",
+  "primary_to": "U105"
+ },
+ "U105": {
+  "title": "New Support Ticket",
+  "hindi": "नया टिकट",
+  "purpose": "Create inquiry with optional log reference.",
+  "states": [
+   "Draft",
+   "submitted"
+  ],
+  "primary": "Submit Ticket",
+  "primary_to": "U106"
+ },
+ "U106": {
+  "title": "Ticket #SUP-4410",
+  "hindi": "सहायता बातचीत",
+  "purpose": "Thread, media attachments where allowed, resolution.",
+  "states": [
+   "Open",
+   "closed"
+  ],
+  "primary": "Mark Resolved",
+  "primary_to": "U104"
+ },
+ "U107": {
+  "title": "Privacy Settings",
+  "hindi": "गोपनीयता",
+  "purpose": "Consent logs, data download/delete request where applicable.",
+  "states": [
+   "Pending",
+   "completed"
+  ],
+  "primary": "Legal policies",
+  "primary_to": "U108"
+ },
+ "U108": {
+  "title": "Legal Policies",
+  "hindi": "कानूनी नीतियाँ",
+  "purpose": "Terms, prizes, refund policy and privacy.",
+  "states": [
+   "Version details"
+  ],
+  "primary": "Back to Profile",
+  "primary_to": "U098"
+ },
+ "U109": {
+  "title": "You’re Offline",
+  "hindi": "आप ऑफ़लाइन हैं",
+  "purpose": "Safe persistent status, retry and support.",
+  "states": [
+   "Retry",
+   "back"
+  ],
+  "primary": "Retry",
+  "primary_to": "U021",
+  "secondary": "Help",
+  "secondary_to": "U104"
+ },
+ "U110": {
+  "title": "Something Went Wrong",
+  "hindi": "कुछ गलत हुआ",
+  "purpose": "Unauthorized, server issue, feature unavailable.",
+  "states": [
+   "Recover",
+   "report"
+  ],
+  "primary": "Try Again",
+  "primary_to": "U021",
+  "secondary": "Report Problem",
+  "secondary_to": "U105"
+ }
+}
